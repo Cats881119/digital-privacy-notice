@@ -1,13 +1,13 @@
 body {
   background: #f0f0f0;
-  height: 100%;
-  overflow: hidden; }
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
-.npp-container {
+.npp-content {
   background: #fff;
   padding: 15px;
   height: auto;
-  overflow: scroll; }
+  overflow: scroll;
+  height: 50%; }
 
 .npp-header .entity-logo {
   width: 100%; }
@@ -18,14 +18,19 @@ body {
 .section-header h2 {
   background: #ac3e34;
   color: white;
-  margin: 0;
-  padding: 0;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
+  padding: 15px;
   font-size: 14px;
-  padding: 10px;
-  text-align: center;
-  float: left; }
+  text-align: center; }
 .section-header p strong {
   color: #ac3e34; }
+
+.section-content {
+  margin: 15px 0;
+  border-bottom: 4px dotted #ac3e34; }
+  .section-content h3 {
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0; }
+  .section-content li {
+    margin-bottom: 0.5em;
+    font-size: 13px; }
