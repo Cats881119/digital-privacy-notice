@@ -63,6 +63,27 @@ User Flow
 7. What will the effective date of the notice be? [datepicker]
 8. OCHA
 
+Markup Organization
+===================
+- npp-header
+- npp-content
+  - section-layered
+    - section-layered-intro
+	- section-layered-rights
+	- section-layered-choices
+	- section-layered-uses
+  - section-rights
+    - segment-opener
+	- segment-bulletblock
+	- segment-annotation
+	- segment-break
+  - section-choices
+  - section-uses
+  - section-responsibilities
+  - section-closing
+- npp-footer
+
+
 
 
 - Share / export

@@ -1,36 +1,59 @@
 body {
+  margin: 0;
+  padding: 0;
   background: #f0f0f0;
+  height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
+.npp-package {
+  border: 10px solid #f0f0f0; }
+
+.npp-header {
+  background: #f0f0f0;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  padding: 8px 0; }
+  .npp-header .entity-logo {
+    width: 100%; }
+  .npp-header h1 {
+    font-size: 1.2em;
+    text-align: right;
+    padding-right: 15px; }
+
+.npp-footer {
+  background: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  display: block;
+  width: 100%;
+  padding: 8px 0; }
+
 .npp-content {
+  margin-top: 60px;
+  z-index: 20;
   background: #fff;
   padding: 15px;
-  height: auto;
-  overflow: scroll;
-  height: 50%; }
+  overflow: scroll; }
 
-.npp-header .entity-logo {
-  width: 100%; }
-.npp-header h1 {
-  font-size: 1em;
-  text-align: right; }
-
-.section-header h2 {
+.segment-opener h2 {
   background: #ac3e34;
   color: white;
   padding: 15px;
   font-size: 14px;
   text-align: center; }
-.section-header p strong {
+.segment-opener p strong {
   color: #ac3e34; }
 
-.section-content {
+.segment-bulletblock {
   margin: 15px 0;
-  border-bottom: 4px dotted #ac3e34; }
-  .section-content h3 {
+  border-bottom: 3px dotted #ac3e34; }
+  .segment-bulletblock h3 {
     font-size: 15px;
     font-weight: bold;
-    margin: 0; }
-  .section-content li {
+    margin: 0;
+    display: block; }
+  .segment-bulletblock li {
     margin-bottom: 0.5em;
     font-size: 13px; }
