@@ -1,0 +1,11 @@
+		<div class="npp-header">
+			<!-- logo -->
+			Notice of Privacy Practices
+			<ul class="navigation-hidden">
+				<li><a href="#">Skip to summary</a></li>
+				<li><a href="#">Skip to Your Rights</a></li>
+				<li><a href="#">Skip to Your Choices</a></li>
+				<li><a href="#">Skip to Our Uses and Disclosures</a></li>
+				<li><a href="#">Skip to Responsibilities and Privacy Official Information</a></li>
+			</ul>
+		</div><!-- /.npp-header -->

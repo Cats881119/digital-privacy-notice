@@ -1,3 +1,53 @@
+$white: 			#fff;
+$medium_carmine: 	#AC3E34;
+$wasabi: 			#718A37;
+$surfie_green: 		#007D7A;
+$bubbles: 			#E5F0EE;
+
+$rights_color: 		$medium_carmine;
+$choices_color: 	$wasabi;
+$uses_color: 		$surfie_green;
+
 body {
-	
+	background: #f0f0f0;
+	height: 100%;
+	overflow: hidden;
+}
+
+.npp-container {
+	background: #fff;
+	padding: 15px;
+	height: auto;
+	overflow: scroll;
+}
+
+.npp-header {
+	.entity-logo {
+		width: 100%;
+	}
+	h1 {
+		font-size: 1em;
+		text-align: right;
+	}
+}
+
+.section-header {
+	h2 {
+		background: $rights_color;
+		color: $white;
+		margin: 0;
+		padding: 0;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+		font-size: 14px;
+		padding: 10px;
+		text-align: center;
+		float: left; 
+	}
+	p {
+		strong {
+			color: $rights_color;
+		}
+	}
 }
