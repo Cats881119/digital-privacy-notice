@@ -7,12 +7,12 @@ body {
 
 .npp-nav {
   z-index: 600;
-  position: fixed;
   width: 100%;
   top: 0;
   margin: 0;
   padding: 0;
   background: #34352e;
+  background: #eee;
   text-align: center;
   display: block; }
   .npp-nav ul {
@@ -28,15 +28,14 @@ body {
       white-space: normal;
       display: inline-block; }
       .npp-nav ul li a {
-        color: white;
+        color: #0286b3;
         width: 100%;
         display: block;
         text-align: center;
-        padding: 6px 0 4px 0;
+        padding: 8px 0 4px 0;
         font-size: 12px; }
 
 .npp-header {
-  margin-top: 30px;
   top: 0;
   z-index: 100;
   padding: 15px 0 13px 0; }
@@ -50,12 +49,14 @@ body {
 
 .npp-footer {
   background: #f0f0f0;
+  border-top: 1px solid #ddd;
   position: fixed;
   bottom: 0;
   z-index: 100;
   display: block;
   width: 100%;
-  padding: 8px 0; }
+  padding: 8px 0;
+  text-align: right; }
 
 .npp-content {
   z-index: 20;
@@ -72,6 +73,8 @@ body {
   text-align: center; }
 .segment-opener p strong {
   color: #34352e; }
+.segment-opener.segment-opener-secondary {
+  margin-top: 52px; }
 
 .segment-bulletblock {
   margin: 15px 0;
@@ -89,6 +92,8 @@ body {
       margin-top: 5px; }
   .segment-bulletblock p {
     font-size: 13px; }
+  .segment-bulletblock .segment-example strong {
+    font-style: italic; }
 
 .section {
   margin-bottom: 40px;
@@ -112,12 +117,50 @@ body {
   .section-bubble .effective {
     font-weight: bold; }
 
+.npp-btn {
+  display: inline-block;
+  height: 14px;
+  font-family: "Lucida Grande", "Segoe UI", "Tahoma", "Helvetica Neue", "Helvetica", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #636363;
+  text-decoration: none;
+  padding: 1px 7px 5px 3px;
+  border: 1px solid #ebebeb;
+  border-radius: 2px;
+  border-bottom-color: #d4d4d4;
+  background: #fcfcfc;
+  background: -moz-linear-gradient(top, #fcfcfc 0%, whitesmoke 100%);
+  background: -webkit-linear-gradient(top, #fcfcfc 0%, whitesmoke 100%);
+  background: linear-gradient(to bottom, #fcfcfc 0%, whitesmoke 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc', endColorstr='#f5f5f5',GradientType=0);
+  line-height: 11px !important;
+  text-decoration: none !important;
+  box-sizing: content-box !important;
+  -webkit-box-sizing: content-box !important;
+  -moz-box-sizing: content-box !important; }
+  .npp-btn span {
+    display: inline-block;
+    width: 15px;
+    height: 14px;
+    vertical-align: bottom;
+    margin: 0 5px 0 2px;
+    background: transparent url("https://www.dropbox.com/static/images/widgets/dbx-saver-status.png") no-repeat;
+    position: relative;
+    top: 2px;
+    background-image: url("https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png");
+    background-size: 60px 14px;
+    -webkit-background-size: 60px 14px;
+    background-position: 0px 0px; }
+
 .section-rights .segment-opener h2 {
   background: #ac3e34; }
 .section-rights .segment-opener p strong {
   color: #ac3e34; }
 .section-rights .segment-bulletblock {
   border-bottom: 3px dotted #ac3e34; }
+.section-rights .segment-bulletblock .segment-example strong {
+  color: #ac3e34; }
 
 .section-choices .segment-opener h2 {
   background: #718a37; }
@@ -125,6 +168,8 @@ body {
   color: #718a37; }
 .section-choices .segment-bulletblock {
   border-bottom: 3px dotted #718a37; }
+.section-choices .segment-bulletblock .segment-example strong {
+  color: #718a37; }
 
 .section-uses .segment-opener h2 {
   background: #007d7a; }
@@ -132,3 +177,5 @@ body {
   color: #007d7a; }
 .section-uses .segment-bulletblock {
   border-bottom: 3px dotted #007d7a; }
+.section-uses .segment-bulletblock .segment-example strong {
+  color: #007d7a; }
