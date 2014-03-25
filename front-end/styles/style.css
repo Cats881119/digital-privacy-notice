@@ -6,29 +6,36 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
 .nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  background: #34352e;
+  text-align: center;
+  display: block; }
   .nav ul {
-    margin: 0;
     padding: 0;
-    margin-top: 20px;
-    height: 50px;
-    list-style-type: none; }
+    list-style: none;
+    text-align: center;
+    display: inline-block;
+    margin: 0 auto; }
     .nav ul li {
       float: left;
-      width: 20%;
-      white-space: normal; }
+      text-align: center;
+      padding: 0 12px;
+      white-space: normal;
+      display: inline-block; }
       .nav ul li a {
         color: white;
         width: 100%;
         display: block;
-        display: table-cell;
         text-align: center;
-        font-size: 12px;
-        vertical-align: middle;
-        height: 50px; }
+        padding: 6px 0 4px 0;
+        font-size: 12px; }
 
 .npp-header {
+  margin-top: 30px;
   top: 0;
   z-index: 100;
   padding: 15px 0 9px 0; }
@@ -99,18 +106,3 @@ body {
   color: #007d7a; }
 .section-uses .segment-bulletblock {
   border-bottom: 3px dotted #007d7a; }
-
-.nav .summary a {
-  background: #34352e; }
-
-.nav .rights a {
-  background: #ac3e34; }
-
-.nav .choices a {
-  background: #718a37; }
-
-.nav .uses a {
-  background: #007d7a; }
-
-.nav .responsibilities a {
-  background: orange; }

@@ -6,6 +6,7 @@ $wasabi: 			        #718A37;
 $surfie_green: 		        #007D7A;
 $bubbles: 			        #E5F0EE;
 $oil:                       #34352E;
+$offwhite:                  #FBF8F0;
                             
 $rights_color: 		        $medium_carmine;
 $choices_color: 	        $wasabi;
@@ -23,27 +24,34 @@ body {
 }
 
 .nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
     margin: 0;
     padding: 0;
+    background: $oil;
+    text-align: center;
+    display: block;
     ul {
-        margin: 0;
+        //margin: 0;
         padding: 0;
-        margin-top: 20px;
-        height: 50px;
-        list-style-type: none;
+        list-style: none;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
         li {
             float: left;
-            width: 20%;
+            text-align: center;
+            padding: 0 12px;
             white-space: normal;
+            display: inline-block;
             a {
                 color: $white;
                 width: 100%;
                 display: block;
-                display: table-cell;
                 text-align: center;
+                padding: 6px 0 4px 0;
                 font-size: 12px;
-                vertical-align: middle;
-                height: 50px;
             }
         }
     }
@@ -58,6 +66,7 @@ body {
 .npp-header {
     //background: #f0f0f0;
     //position: fixed;
+    margin-top: 30px;
     top: 0;
     z-index: 100;
     padding: 15px 0 9px 0;
@@ -144,9 +153,9 @@ body {
     .segment-opener p strong { color: $uses_color; }
     .segment-bulletblock { border-bottom: 3px dotted $uses_color; }
 }
-
-.nav .summary a { background: $oil; }
-.nav .rights a { background: $rights_color; }
-.nav .choices a { background: $choices_color; }
-.nav .uses a { background: $uses_color; }
-.nav .responsibilities a { background: $responsibilities_color; }
+//
+//.nav .summary a { background: $oil; }
+//.nav .rights a { background: $rights_color; }
+//.nav .choices a { background: $choices_color; }
+//.nav .uses a { background: $uses_color; }
+//.nav .responsibilities a { background: $responsibilities_color; }
