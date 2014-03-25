@@ -1,39 +1,49 @@
 // Set color variables
 
-$white: 			#fff;
-$medium_carmine: 	#AC3E34;
-$wasabi: 			#718A37;
-$surfie_green: 		#007D7A;
-$bubbles: 			#E5F0EE;
-$oil:               #34352E;
-
-
-$rights_color: 		$medium_carmine;
-$choices_color: 	$wasabi;
-$uses_color: 		$surfie_green;
+$white: 			        #fff;
+$medium_carmine: 	        #AC3E34;
+$wasabi: 			        #718A37;
+$surfie_green: 		        #007D7A;
+$bubbles: 			        #E5F0EE;
+$oil:                       #34352E;
+                            
+$rights_color: 		        $medium_carmine;
+$choices_color: 	        $wasabi;
+$uses_color: 		        $surfie_green;
+$responsibilities_color:    orange;
 
 body {
     margin: 0;
     padding: 0;
-	//background: #f0f0f0;
+	background: #f8f8f8;
     height: 100%;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+//    border: 2px solid $oil;
+    //overflow: hidden;
 }
 
 .nav {
-    margin-top: 20px;
-    li {
-        float: left;
-        width: 25%;
-        a {
-            background: $oil;
-            color: $white;
-            display: block;
-            text-align: center;
-            text-decoration: underline;
-            height: 65px;
-            &:hover {
-                background: $bubbles;
+    margin: 0;
+    padding: 0;
+    ul {
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+        height: 50px;
+        list-style-type: none;
+        li {
+            float: left;
+            width: 20%;
+            white-space: normal;
+            a {
+                color: $white;
+                width: 100%;
+                display: block;
+                display: table-cell;
+                text-align: center;
+                font-size: 12px;
+                vertical-align: middle;
+                height: 50px;
             }
         }
     }
@@ -42,7 +52,7 @@ body {
 .npp-package {
     //background: #fff;
     //padding: 15px;
-    //border: 10px solid #f0f0f0;
+//    border: 10px solid #f0f0f0;
 }
 
 .npp-header {
@@ -50,10 +60,11 @@ body {
     //position: fixed;
     top: 0;
     z-index: 100;
-    padding: 8px 0;
+    padding: 15px 0 9px 0;
 	.entity-logo {
-		width: 100%;
-	}
+        max-width: 80%;
+        width: 80%;
+    }
 	h1 {
 		font-size: 1.2em;
 		text-align: right;
@@ -127,3 +138,15 @@ body {
     .segment-opener p strong { color: $choices_color; }
     .segment-bulletblock { border-bottom: 3px dotted $choices_color; }
 }
+
+.section-uses {
+    .segment-opener h2 { background: $uses_color; }
+    .segment-opener p strong { color: $uses_color; }
+    .segment-bulletblock { border-bottom: 3px dotted $uses_color; }
+}
+
+.nav .summary a { background: $oil; }
+.nav .rights a { background: $rights_color; }
+.nav .choices a { background: $choices_color; }
+.nav .uses a { background: $uses_color; }
+.nav .responsibilities a { background: $responsibilities_color; }
