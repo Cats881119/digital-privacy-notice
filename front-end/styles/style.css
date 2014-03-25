@@ -5,7 +5,7 @@ body {
   height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
-.nav {
+.npp-nav {
   z-index: 600;
   position: fixed;
   width: 100%;
@@ -15,19 +15,19 @@ body {
   background: #34352e;
   text-align: center;
   display: block; }
-  .nav ul {
+  .npp-nav ul {
     padding: 0;
     list-style: none;
     text-align: center;
     display: inline-block;
     margin: 0 auto; }
-    .nav ul li {
+    .npp-nav ul li {
       float: left;
       text-align: center;
       padding: 0 12px;
       white-space: normal;
       display: inline-block; }
-      .nav ul li a {
+      .npp-nav ul li a {
         color: white;
         width: 100%;
         display: block;
@@ -64,9 +64,10 @@ body {
   overflow: scroll; }
 
 .segment-opener h2 {
+  margin: 0;
   background: #34352e;
   color: white;
-  padding: 15px;
+  padding: 18px;
   font-size: 14px;
   text-align: center; }
 .segment-opener p strong {
@@ -88,6 +89,10 @@ body {
       margin-top: 5px; }
   .segment-bulletblock p {
     font-size: 13px; }
+
+.section {
+  margin-bottom: 40px;
+  margin-top: 40px; }
 
 .section-bubble {
   margin-bottom: 80px; }
