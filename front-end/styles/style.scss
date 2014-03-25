@@ -6,7 +6,8 @@ $wasabi: 			        #718A37;
 $surfie_green: 		        #007D7A;
 $bubbles: 			        #E5F0EE;
 $oil:                       #34352E;
-$offwhite:                  #FBF8F0;
+$floral_white:              #FBF8F0;
+$bondi_blue:                #0286B3;
                             
 $rights_color: 		        $medium_carmine;
 $choices_color: 	        $wasabi;
@@ -24,6 +25,7 @@ body {
 }
 
 .nav {
+    z-index: 600;
     position: fixed;
     width: 100%;
     top: 0;
@@ -69,7 +71,7 @@ body {
     margin-top: 30px;
     top: 0;
     z-index: 100;
-    padding: 15px 0 9px 0;
+    padding: 15px 0 13px 0;
 	.entity-logo {
         max-width: 80%;
         width: 80%;
@@ -100,6 +102,10 @@ body {
 }
 
 .segment-opener {
+    //.row {
+//        margin: 0;
+//        padding: 0;
+//    }
 	h2 {
 		background: $oil;
 		color: $white;
@@ -128,10 +134,36 @@ body {
 	li {
 		margin-bottom: 0.5em;
 		font-size: 13px;
+        ul {
+            margin-top: 5px;
+        }
 	}
     p {
         font-size: 13px;
     }
+}
+
+.section-bubble {
+    .col-lg-12 {
+        background: $bubbles;
+        border-radius: 8px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    h2 {
+        border-bottom: 2px solid $oil;
+        font-size: 1.35em;
+        font-weight: bold;
+        padding-bottom: 8px;
+    }
+    h3 {
+        font-size: 1.125em;
+        font-weight: bold;
+    }
+    .effective {
+        font-weight: bold;
+    }
+    margin-bottom: 80px;
 }
 
 

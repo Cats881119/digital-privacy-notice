@@ -6,6 +6,7 @@ body {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
 .nav {
+  z-index: 600;
   position: fixed;
   width: 100%;
   top: 0;
@@ -38,7 +39,7 @@ body {
   margin-top: 30px;
   top: 0;
   z-index: 100;
-  padding: 15px 0 9px 0; }
+  padding: 15px 0 13px 0; }
   .npp-header .entity-logo {
     max-width: 80%;
     width: 80%; }
@@ -83,8 +84,28 @@ body {
   .segment-bulletblock li {
     margin-bottom: 0.5em;
     font-size: 13px; }
+    .segment-bulletblock li ul {
+      margin-top: 5px; }
   .segment-bulletblock p {
     font-size: 13px; }
+
+.section-bubble {
+  margin-bottom: 80px; }
+  .section-bubble .col-lg-12 {
+    background: #e5f0ee;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  .section-bubble h2 {
+    border-bottom: 2px solid #34352e;
+    font-size: 1.35em;
+    font-weight: bold;
+    padding-bottom: 8px; }
+  .section-bubble h3 {
+    font-size: 1.125em;
+    font-weight: bold; }
+  .section-bubble .effective {
+    font-weight: bold; }
 
 .section-rights .segment-opener h2 {
   background: #ac3e34; }
