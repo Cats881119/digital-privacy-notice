@@ -1,16 +1,25 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f0f0f0;
   height: 100%;
   font-family: 'Open Sans', Helvetica, Arial, sans-serif; }
 
-.npp-package {
-  border: 10px solid #f0f0f0; }
+.nav {
+  margin-top: 20px; }
+  .nav li {
+    float: left;
+    width: 25%; }
+    .nav li a {
+      background: #34352e;
+      color: white;
+      display: block;
+      text-align: center;
+      text-decoration: underline;
+      height: 65px; }
+      .nav li a:hover {
+        background: #e5f0ee; }
 
 .npp-header {
-  background: #f0f0f0;
-  position: fixed;
   top: 0;
   z-index: 100;
   padding: 8px 0; }
@@ -31,7 +40,6 @@ body {
   padding: 8px 0; }
 
 .npp-content {
-  margin-top: 60px;
   z-index: 20;
   background: #fff;
   padding: 15px;
