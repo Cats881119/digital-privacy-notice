@@ -53,9 +53,12 @@ body {
     font-size: 15px;
     font-weight: bold;
     margin: 0;
-    display: block; }
+    display: block;
+    padding-bottom: 1em; }
   .segment-bulletblock li {
     margin-bottom: 0.5em;
+    font-size: 13px; }
+  .segment-bulletblock p {
     font-size: 13px; }
 
 .section-rights .segment-opener h2 {
