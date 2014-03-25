@@ -5,6 +5,8 @@ $medium_carmine: 	#AC3E34;
 $wasabi: 			#718A37;
 $surfie_green: 		#007D7A;
 $bubbles: 			#E5F0EE;
+$oil:               #34352E;
+
 
 $rights_color: 		$medium_carmine;
 $choices_color: 	$wasabi;
@@ -58,10 +60,9 @@ body {
     overflow: scroll;
 }
 
-
 .segment-opener {
 	h2 {
-		background: $rights_color;
+		background: $oil;
 		color: $white;
 		padding: 15px;
 		font-size: 14px;
@@ -69,14 +70,15 @@ body {
 	}
 	p {
 		strong {
-			color: $rights_color;
+			color: $oil;
 		}
+        //border: 1px solid $rights_color;
 	}
 }
 
 .segment-bulletblock {
 	margin: 15px 0;
-	border-bottom: 3px dotted $rights_color;
+	border-bottom: 3px dotted $oil;
 	h3 {
 		font-size: 15px;
 		font-weight: bold;
@@ -87,4 +89,18 @@ body {
 		margin-bottom: 0.5em;
 		font-size: 13px;
 	}
+}
+
+
+// Define colors by section
+.section-rights {
+    .segment-opener h2 { background: $rights_color; }
+    .segment-opener p strong { color: $rights_color; }
+    .segment-bulletblock { border-bottom: 3px dotted $rights_color; }
+}
+
+.section-choices {
+    .segment-opener h2 { background: $choices_color; }
+    .segment-opener p strong { color: $choices_color; }
+    .segment-bulletblock { border-bottom: 3px dotted $choices_color; }
 }

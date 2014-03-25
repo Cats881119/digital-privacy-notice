@@ -38,17 +38,17 @@ body {
   overflow: scroll; }
 
 .segment-opener h2 {
-  background: #ac3e34;
+  background: #34352e;
   color: white;
   padding: 15px;
   font-size: 14px;
   text-align: center; }
 .segment-opener p strong {
-  color: #ac3e34; }
+  color: #34352e; }
 
 .segment-bulletblock {
   margin: 15px 0;
-  border-bottom: 3px dotted #ac3e34; }
+  border-bottom: 3px dotted #34352e; }
   .segment-bulletblock h3 {
     font-size: 15px;
     font-weight: bold;
@@ -57,3 +57,17 @@ body {
   .segment-bulletblock li {
     margin-bottom: 0.5em;
     font-size: 13px; }
+
+.section-rights .segment-opener h2 {
+  background: #ac3e34; }
+.section-rights .segment-opener p strong {
+  color: #ac3e34; }
+.section-rights .segment-bulletblock {
+  border-bottom: 3px dotted #ac3e34; }
+
+.section-choices .segment-opener h2 {
+  background: #718a37; }
+.section-choices .segment-opener p strong {
+  color: #718a37; }
+.section-choices .segment-bulletblock {
+  border-bottom: 3px dotted #718a37; }
