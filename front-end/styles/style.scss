@@ -20,8 +20,6 @@ body {
 	background: #f8f8f8;
     height: 100%;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-//    border: 2px solid $oil;
-    //overflow: hidden;
 }
 
 .npp-nav {
@@ -60,7 +58,6 @@ body {
 }
 
 .npp-header {
-    //margin-top: 30px;
     top: 0;
     z-index: 100;
     padding: 15px 0 13px 0;
@@ -68,10 +65,20 @@ body {
         max-width: 80%;
         width: 80%;
     }
-	h1 {
-		font-size: 1.2em;
-		text-align: right;
-        padding-right: 15px;
+    .npp-title {
+        text-align: right;
+        float: right;
+        a {
+            display: inline-block;
+            padding: 0 5px;
+            font-size: 12px;
+        }
+    }
+    h1 {
+        font-size: 1.2em;
+        text-align: right;
+        line-height: 1em;
+        padding-right: 5px;
 	}
 }
 
@@ -103,6 +110,7 @@ body {
 		padding: 18px;
 		font-size: 14px;
 		text-align: center;
+        margin-bottom: 15px;
 	}
 	p {
 		strong {
@@ -112,6 +120,8 @@ body {
 	}
     &.segment-opener-secondary {
         margin-top: 52px;
+        word-wrap: break-word;
+        
     }
 }
 
@@ -128,6 +138,8 @@ body {
 	li {
 		margin-bottom: 0.5em;
 		font-size: 13px;
+        //word-break: break-all;
+        word-wrap: break-word;
         ul {
             margin-top: 5px;
         }
@@ -146,8 +158,23 @@ body {
 }
 
 .section {
-    margin-bottom: 40px;
-    margin-top: 40px;
+    margin-bottom: 0px;
+    margin-top: 50px;
+}
+
+.section-back-to-top {
+    margin: 0;
+    padding: 0;
+    .row div {
+        text-align: center;
+    }
+    a {
+        font-size: 12px;
+        text-decoration: underline;
+    }
+    &.pre-footer {
+        margin-bottom: 60px;
+    }
 }
 
 .section-bubble {
@@ -201,16 +228,46 @@ body {
         height: 14px;
         vertical-align: bottom;
         margin: 0 5px 0 2px;
-        background: transparent url('https://www.dropbox.com/static/images/widgets/dbx-saver-status.png') no-repeat;
+        background: transparent url('../images/example-third-party-service.png') no-repeat;
         position: relative;
         top: 2px;
-        background-image: url('https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png');
+        //background-image: url('https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png');
         background-size: 60px 14px;
         -webkit-background-size: 60px 14px;
         background-position: 0px 0px;
     }
+    &.npp-btn-print span {
+        background: url('../images/icn-print.png') no-repeat;
+        // background-size: 60px 14px;
+        // -webkit-background-size: 60px 14px;
+        // background-position: 0px 0px;
+        background-size: 100%;
+    }
+    &.npp-btn-email span {
+        background: url('../images/icn-mail.png') no-repeat;
+        // background-size: 60px 14px;
+        // -webkit-background-size: 60px 14px;
+        // background-position: 0px 0px;
+        background-size: 100%;
+    }
+    &:hover {
+        color: #333;
+    }
 }
+/* Example */ .dropbox-dropin-btn .dropin-btn-status { background: transparent url('../images/example-third-party-service.png') no-repeat !important; }
 
+@media print { 
+    .no-print {
+        display: none;
+    }
+    
+    .segment-opener h2 {
+        border: 2px solid #000;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+}
 
 // Define colors by section
 .section-rights {
@@ -233,9 +290,3 @@ body {
     .segment-bulletblock { border-bottom: 3px dotted $uses_color; }
     .segment-bulletblock .segment-example strong { color: $uses_color; } 
 }
-//
-//.nav .summary a { background: $oil; }
-//.nav .rights a { background: $rights_color; }
-//.nav .choices a { background: $choices_color; }
-//.nav .uses a { background: $uses_color; }
-//.nav .responsibilities a { background: $responsibilities_color; }

@@ -42,10 +42,18 @@ body {
   .npp-header .entity-logo {
     max-width: 80%;
     width: 80%; }
+  .npp-header .npp-title {
+    text-align: right;
+    float: right; }
+    .npp-header .npp-title a {
+      display: inline-block;
+      padding: 0 5px;
+      font-size: 12px; }
   .npp-header h1 {
     font-size: 1.2em;
     text-align: right;
-    padding-right: 15px; }
+    line-height: 1em;
+    padding-right: 5px; }
 
 .npp-footer {
   background: #f0f0f0;
@@ -70,11 +78,13 @@ body {
   color: white;
   padding: 18px;
   font-size: 14px;
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 15px; }
 .segment-opener p strong {
   color: #34352e; }
 .segment-opener.segment-opener-secondary {
-  margin-top: 52px; }
+  margin-top: 52px;
+  word-wrap: break-word; }
 
 .segment-bulletblock {
   margin: 15px 0;
@@ -87,7 +97,8 @@ body {
     padding-bottom: 1em; }
   .segment-bulletblock li {
     margin-bottom: 0.5em;
-    font-size: 13px; }
+    font-size: 13px;
+    word-wrap: break-word; }
     .segment-bulletblock li ul {
       margin-top: 5px; }
   .segment-bulletblock p {
@@ -96,8 +107,19 @@ body {
     font-style: italic; }
 
 .section {
-  margin-bottom: 40px;
-  margin-top: 40px; }
+  margin-bottom: 0px;
+  margin-top: 50px; }
+
+.section-back-to-top {
+  margin: 0;
+  padding: 0; }
+  .section-back-to-top .row div {
+    text-align: center; }
+  .section-back-to-top a {
+    font-size: 12px;
+    text-decoration: underline; }
+  .section-back-to-top.pre-footer {
+    margin-bottom: 60px; }
 
 .section-bubble {
   margin-bottom: 80px; }
@@ -145,14 +167,33 @@ body {
     height: 14px;
     vertical-align: bottom;
     margin: 0 5px 0 2px;
-    background: transparent url("https://www.dropbox.com/static/images/widgets/dbx-saver-status.png") no-repeat;
+    background: transparent url("../images/example-third-party-service.png") no-repeat;
     position: relative;
     top: 2px;
-    background-image: url("https://www.dropbox.com/static/images/widgets/dbx-saver-status-2x.png");
     background-size: 60px 14px;
     -webkit-background-size: 60px 14px;
     background-position: 0px 0px; }
+  .npp-btn.npp-btn-print span {
+    background: url("../images/icn-print.png") no-repeat;
+    background-size: 100%; }
+  .npp-btn.npp-btn-email span {
+    background: url("../images/icn-mail.png") no-repeat;
+    background-size: 100%; }
+  .npp-btn:hover {
+    color: #333; }
 
+/* Example */
+.dropbox-dropin-btn .dropin-btn-status {
+  background: transparent url("../images/example-third-party-service.png") no-repeat !important; }
+
+@media print {
+  .no-print {
+    display: none; }
+
+  .segment-opener h2 {
+    border: 2px solid #000;
+    font-size: 18px;
+    font-weight: bold; } }
 .section-rights .segment-opener h2 {
   background: #ac3e34; }
 .section-rights .segment-opener p strong {

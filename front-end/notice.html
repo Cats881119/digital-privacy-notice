@@ -20,32 +20,36 @@
 <body>
 <!-- Copyright (C) 2014 Tony Webster. All rights reserved. -->
     
-    <div class="npp-package">
+    <div class="npp-package" id="top">
 
         <div class="npp-header">
             <div class="container">
                 
                 <div class="row">
-                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-                        <img src="images/example-logo.png" alt="Example North County Medical Center" class="entity-logo">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xxs-12 npp-entity">
+                        <img src="images/example-logo.png" alt="North Star Example Medical Center" class="entity-logo">
                     </div>
-                    <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                    <div class="col-lg-7 col-md-7 col-sm-7 col-xxs-12 npp-title">
                         <h1>Notice of Privacy Practices</h1>
+                        <div class="npp-lang">
+                            <a href="#">English</a>
+                            <a href="#">Español</a>
+                        </div><!-- /.npp-lang -->
                     </div>
                 </div><!-- /.row -->
                 
             </div><!-- /.container -->
         </div><!-- /.npp-header -->
         
-        <div class="npp-nav">
+        <div class="npp-nav no-print">
             <div class="container">
                 <div class="row">
                     <ul>
-                        <li class="summary"><a href="#">Summary</a></li>
-                        <li class="rights"><a href="#">Your Rights</a></li>
-                        <li class="choices"><a href="#">Your Choices</a></li>
-                        <li class="uses"><a href="#">Our Uses and Disclosures</a></li>
-                        <li class="responsibilities"><a href="#">Our Responsibilities</a></li>
+                        <li class="summary"><a href="#summary">Summary</a></li>
+                        <li class="rights"><a href="#rights">Your Rights</a></li>
+                        <li class="choices"><a href="#choices">Your Choices</a></li>
+                        <li class="uses"><a href="#uses">Our Uses and Disclosures</a></li>
+                        <li class="responsibilities"><a href="#responsibilities">Our Responsibilities</a></li>
                     </ul>
                 </div><!-- /.row -->
             </div><!-- /.container -->
@@ -53,7 +57,7 @@
 
         <div class="npp-content">
         
-            <div class="section section-rights">
+            <div class="section section-rights" id="rights">
                 
                 <div class="container">
             
@@ -73,10 +77,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Get an electronic or paper copy of your medical record</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask to see or get an electronic or paper copy of your
                                         medical record and other health information we have about you. Ask us how to do this.</li>
@@ -89,10 +93,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Ask us to correct your medical record</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask us to correct health information about you that you think is incorrect or incomplete. Ask us how to do this.</li>
                                     <li>We may say “no” to your request, but we’ll tell you why in writing within 60 days.</li>
@@ -103,10 +107,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Request confidential communications</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask us to contact you in a specific way (for example, home or office phone) or to send mail to a different address.</li>
                                     <li>We will say “yes” to all reasonable requests.</li>
@@ -117,10 +121,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Ask us to limit what we use or share</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask us <strong>not</strong> to use or share certain health information for treatment, payment, or our operations. We are not required to agree to your request, and we may say “no” if it would affect your care.</li>
                                     <li>If you pay for a service or health care item out-of-pocket in full, you can ask us not to share that information for the purpose of payment or our operations with your health insurer. We will say “yes” unless a law requires us to share that information.</li>
@@ -131,10 +135,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Get a list of those with whom we’ve shared information</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask for a list (accounting) of the times we’ve shared your health information for six years prior to the date you ask, who we shared it with, and why.</li>
                                     <li>We will include all the disclosures except for those about treatment, payment, and health care operations, and certain other disclosures (such as any you asked us to make). We’ll provide one accounting a year for free but will charge a reasonable, cost-based fee if you ask for another one within 12 months.</li>
@@ -145,10 +149,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Get a copy of this privacy notice</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can ask for a paper copy of this notice at any time, even if you have agreed to receive the notice electronically. We will provide you with a paper copy promptly.</li>
                                 </ul>
@@ -158,10 +162,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Choose someone to act for you</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>If you have given someone medical power of attorney or if someone is your legal guardian, that person can exercise your rights and make choices about your health information.</li>
                                     <li>We will make sure the person has this authority and can act for you before we take any action.</li>
@@ -172,10 +176,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>File a complaint if you feel your rights are violated</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>You can complain if you feel we have violated your rights by contacting us using the information on page 1.</li>
                                     <li>You can file a complaint with the U.S. Department of Health and Human Services Office for Civil Rights by sending a letter to 200 Independence Avenue, S.W., Washington, D.C. 20201, calling <a href="tel:+18776966775" title="Call 1-877-696-6775">1-877-696-6775</a>, or visiting <a href="http://www.hhs.gov/ocr/privacy/hipaa/complaints/" rel="external" target="_blank" title="Office for Civil Rights: Complaints">www.hhs.gov/ocr/privacy/hipaa/complaints/</a>.</li>
@@ -189,7 +193,17 @@
             
             </div><!-- /.section /.section-rights -->
             
-            <div class="section section-choices">
+            <div class="section section-back-to-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#top" title="Navigate to Top of Page">Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.section-back-to-top -->
+            
+            <div class="section section-choices" id="choices">
                 
                 <div class="container">
             
@@ -210,10 +224,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>In these cases, you have both the right and choice to tell us to:</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>Share information with your family, close friends, or others involved in your care</li>
                                     <li>Share information in a disaster relief situation</li>
@@ -226,10 +240,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>In these cases we <em>never</em> share your information unless you give us written permission:</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>Marketing purposes</li>
                                     <li>Sale of your information</li>
@@ -241,10 +255,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>In the case of fundraising:</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We may contact you for fundraising efforts, but you can tell us not to contact you again.</li>
                                 </ul>
@@ -256,7 +270,17 @@
             
             </div><!-- /.section /.section-choices -->
             
-            <div class="section section-uses">
+            <div class="section section-back-to-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#top" title="Navigate to Top of Page">Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.section-back-to-top -->
+            
+            <div class="section section-uses" id="uses">
                 
                     <div class="container">
             
@@ -276,15 +300,15 @@
                 
                     <div class="segment-bulletblock segment-bulletblock-double">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Treat you</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
                                 <ul>
                                     <li>We can use your health information and share it with other professionals who are treating you.</li>
                                 </ul>
                             </div><!-- /.segment-info -->
-                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <p><strong>Example:</strong> A doctor treating you for an injury asks another doctor about your overall health condition.</p>
                             </div><!-- /.segment-info -->
                         </div><!-- /.row -->
@@ -292,15 +316,15 @@
                 
                     <div class="segment-bulletblock segment-bulletblock-double">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Run our organization</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
                                 <ul>
                                     <li>We can use and share your health information to run our practice, improve your care, and contact you when necessary.</li>
                                 </ul>
                             </div><!-- /.segment-info -->
-                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <p><strong>Example:</strong> We use health information about you to manage your treatment and services.</p>
                             </div><!-- /.segment-info -->
                         </div><!-- /.row -->
@@ -308,15 +332,15 @@
                 
                     <div class="segment-bulletblock segment-bulletblock-double">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Bill for your services</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                            <div class="segment-info col-lg-5 col-md-5 col-sm-5 col-xs-12">
                                 <ul>
                                     <li>We can use and share your health information to bill and get payment from health plans or other entities.</li>
                                 </ul>
                             </div><!-- /.segment-info -->
-                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-4">
+                            <div class="segment-example col-lg-4 col-md-4 col-sm-4 col-xs-12">
                                 <p><strong>Example:</strong> We give information about you to your health insurance plan so it will pay for your services.</p>
                             </div><!-- /.segment-info -->
                         </div><!-- /.row -->
@@ -335,10 +359,10 @@
                 
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Help with public health and safety issues</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>
                                         We can share health information about you for certain situations such as:
@@ -357,10 +381,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Do research</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We can use or share your information for health research.</li>
                                 </ul>
@@ -370,10 +394,10 @@
             
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Comply with the law</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We will share information about you if state or federal laws require it, including with the Department of Health and Human Services if it wants to see that we’re complying with federal privacy law.</li>
                                 </ul>
@@ -383,10 +407,10 @@
                 
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Respond to organ and tissue donation requests</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We can share health information about you with organ procurement organizations.</li>
                                 </ul>
@@ -396,10 +420,10 @@
                 
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Work with a medical examiner or funeral director</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We can share health information with a coroner, medical examiner, or funeral director when an individual dies.</li>
                                 </ul>
@@ -409,10 +433,10 @@
                 
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Address workers’ compensation, law enforcement, and other government requests</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>
                                         We can use or share health information about you:
@@ -430,10 +454,10 @@
                 
                     <div class="segment-bulletblock">
                         <div class="row">
-                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-3">
+                            <div class="segment-label col-lg-3 col-md-3 col-sm-3 col-xs-12">
                                 <h3>Respond to lawsuits and legal actions</h3>
                             </div><!-- /.segment-label -->
-                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-9">
+                            <div class="segment-info col-lg-9 col-md-9 col-sm-9 col-xs-12">
                                 <ul>
                                     <li>We can share health information about you in response to a court or administrative order, or in response to a subpoena.</li>
                                 </ul>
@@ -446,7 +470,18 @@
             </div><!-- /.section /.section-choices -->
             
             
-            <div class="section section-responsibilities section-bubble">
+            <div class="section section-back-to-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#top" title="Navigate to Top of Page">Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.section-back-to-top -->
+            
+            
+            <div class="section section-responsibilities section-bubble" id="responsibilities">
                 
                 <div class="container">
                 
@@ -463,7 +498,7 @@
                                 <li>We will not use or share your information other than as described here unless you tell us we can in writing. If you tell us we can, you may change your mind at any time. Let us know in writing if you change your mind.</li>
                             </ul>
                 
-                            <p>For more information see: <a href="www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/noticepp.html" title="Notice of Privacy Practices - U.S. Department of Health and Human Services" target="_blank" rel="external">www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/noticepp.html</a>.</p>
+                            <p>For more information see: <a href="http://www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/noticepp.html" title="Notice of Privacy Practices - U.S. Department of Health and Human Services" target="_blank" rel="external">www.hhs.gov/ocr/privacy/hipaa/understanding/consumers/noticepp.html</a>.</p>
                 
                             <h3>Changes to the Terms of this Notice</h3>
                 
@@ -479,18 +514,29 @@
             
             </div><!-- /.section /.section-responsibilities -->
         
+            <div class="section section-back-to-top pre-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <a href="#top" title="Navigate to Top of Page">Back to Top</a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /.section-back-to-top -->
+        
         </div><!-- /.npp-content -->
 
-        <div class="npp-footer">
+        <div class="npp-footer no-print" id="footer">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <!-- back to top -->
-                        <a href="#" class="npp-btn" title="Print this Notice of Privacy Practices"><span></span> Print</a>
-                        <a href="#" class="npp-btn" title="E-mail this Notice of Privacy Practices"><span></span> E-mail</a>
+                        <!-- Icons: Icomoon, CC-BY / GPL -->
+                        <a href="javascript:window.print()" class="npp-btn npp-btn-print" title="Print this Notice of Privacy Practices"><span></span> Print</a>
+                        <a href="javascript:alert('(Requires hosted version)');" class="npp-btn npp-btn-email" title="E-mail this Notice of Privacy Practices"><span></span> E-mail</a>
                         
+                        <!-- Dropbox is provided as an example only. No claim to logo or Dropbox JS implementation. -->
                         <script type="text/javascript" src="https://www.dropbox.com/static/api/2/dropins.js" id="dropboxjs" data-app-key="bx12hzffhlrbo2y"></script>
-                        <a href="https://dl.dropboxusercontent.com/s/deroi5nwm6u7gdf/advice.png" title="Save this Notice of Privacy Practices to my Dropbox account" class="dropbox-saver"></a>
+                        <a href="images/placeholder-file.png" title="Save this Notice of Privacy Practices to my Dropbox account" class="dropbox-saver"></a>
                     </div>
                 </div><!-- /.row -->
             </div><!-- /.container -->
